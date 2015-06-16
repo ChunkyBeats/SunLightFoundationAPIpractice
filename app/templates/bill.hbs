@@ -1,0 +1,6 @@
+<ul>
+  {{#each bill in model}}
+    <li><span class="legislator-name"> {{bill.bill_id}} </span> - {{bill.description}}<br>
+    {{bill.context}}</li>
+    {{/each}}
+</ul>

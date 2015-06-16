@@ -6,6 +6,15 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.resource('legislators', {path: '/'}, function() {
+    this.resource('contact', {path: 'contact/:zip'});
+  });
+  this.resource('bills', function() {
+    this.resource('bill', {path: 'bill/:date'});
+  });
+  this.resource('committees', function() {
+    this.resource('committee', {path: '/:group/:house'})
+  });
 });
 
 export default Router;

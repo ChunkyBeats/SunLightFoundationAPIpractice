@@ -1,0 +1,16 @@
+<h1>Committee Lookup</h1>
+
+<form>
+  <div class="col-md-5">
+    <div class="form-group">
+      {{input value=group id="group" placeholder="keyword"}}
+      {{view "select" content=chamber value=house}}
+    </div>
+  <button class="btn btn-primary" {{action 'submit'}}>Submit</button>
+</div>
+
+</form>
+
+  <div class="col-md-7">
+    {{outlet}}
+  </div>

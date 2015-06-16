@@ -1,0 +1,9 @@
+.legislator-name {
+  color: green;
+  font-weight: bold;
+  font-size: medium;
+}
+
+body {
+  padding-top: 70px;
+}

@@ -1,0 +1,18 @@
+<h1>Bill Lookup</h1>
+
+<form>
+  <div class="col-md-5">
+    <div class="form-group">
+      <div class="col-md-3">
+        <button class="btn btn-primary" {{action 'submit'}}>Submit</button>
+      </div>
+      <div class="col-md-2">
+        {{input value=date id="date" placeholder="Date: 2015-06-15"}}
+      </div>
+    </div>
+  </div>
+</form>
+
+  <div class="col-md-5">
+    {{outlet}}
+  </div>
