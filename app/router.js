@@ -15,6 +15,9 @@ Router.map(function() {
   this.resource('committees', function() {
     this.resource('committee', {path: '/:group/:house'})
   });
+  this.resource('hearings', function() {
+    this.resource('hearing', {path: 'hearing/:query'})
+  });
 });
 
 export default Router;
